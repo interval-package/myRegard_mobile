@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/hint_id">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_book_id"
+            android:hint="@string/hint_id"
+            android:textColorHint="#95A1AA"
+            android:singleLine="true"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:selectAllOnFocus="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/input_book_name">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_book_name"
+            android:hint="@string/input_book_name"
+            android:textColorHint="#95A1AA"
+            android:singleLine="true"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:selectAllOnFocus="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/write_data"
+            android:onClick="write_book_info">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="return book"
+            android:onClick="return_action">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
